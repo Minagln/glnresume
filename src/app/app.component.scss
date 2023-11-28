@@ -1,0 +1,154 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    padding: 5%;
+    min-height: 100%;
+    background: url('/assets/img/background.png'), #F1EAD8 50% / cover no-repeat;
+
+    .main-des {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+
+        .left-container {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .describe-me {
+                display: flex;
+                flex-direction: column;
+
+                .heading-title {
+                    color: #3A457D;
+                    font-size: 59px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 100px;
+                    margin-top: 0;
+                }
+
+                .describe-style {
+                    color: #3A457D;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .my-experience {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                margin-top: 55px;
+
+                .show-more-detail {
+                    border-radius: 16px;
+                    border: 1.5px solid #3A457D;
+                    background: #FF864D;
+                    box-shadow: 4px 4px 0px 0px #3A457D;
+                    display: inline-flex;
+                    padding: 8px 64px;
+                    justify-content: center;
+                    align-items: center;
+                    color: #3A457D;
+                    height: 45px;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+
+                .about-me {
+                    margin-top: 25px;
+                    z-index: 10;
+                }
+
+                .my-work {
+                    margin-bottom: 15px;
+                    background: #A3C9CA !important;
+                    margin-left: -40px;
+                }
+
+                .my-edu {
+                    margin-top: 15px;
+                    background: #4E745F !important;
+                    color: #F1EAD8 !important;
+                    margin-left: -15px;
+                    z-index: 10;
+                }
+            }
+        }
+
+        .right-container {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .image-mood {
+                width: 100%;
+                height: inherit;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+    .main-des {
+        flex-direction: column-reverse !important;
+
+        .left-container {
+            width: 100% !important;
+        }
+
+        .right-container {
+            width: 100% !important;
+        }
+
+        .heading-title{
+            line-height: 60px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .main-des {
+        flex-direction: column-reverse !important;
+
+        .left-container {
+            width: 100% !important;
+            .heading-title{
+                font-size: 35px !important;
+                line-height: 50px !important;
+                margin-bottom: 0 !important;
+            }
+            .describe-style{
+                font-size: 20px !important;
+            }
+
+            .show-more-detail{
+                padding: 8px 22px !important;
+                font-size: 18px !important;
+            }
+            .my-experience{
+                margin-top: 0 !important;
+            }
+        }
+
+        .right-container {
+            width: 100% !important;
+            margin-bottom: 15px !important;
+        }
+    }
+}

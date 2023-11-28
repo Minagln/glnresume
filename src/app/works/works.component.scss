@@ -1,0 +1,130 @@
+.main-work {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 94%;
+    margin: 3%;
+    min-height: 100%;
+    background-image: url('/assets/img/clock.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    .tilte-page {
+        border-radius: 16px;
+        border: 1.5px solid #3A457D;
+        background: #A3C9CA;
+        box-shadow: 4px 4px 0px 0px #3A457D;
+        display: inline-flex;
+        padding: 7px 56px;
+        justify-content: center;
+        align-items: center;
+        color: #3A457D;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .main-work-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .left-side {
+            width: 40%;
+            margin-right: 100px;
+        }
+
+        .right-side {
+            width: 42%;
+        }
+
+        .box-detail {
+            border-radius: 24px;
+            border: 3px solid #3A457D;
+            background: #FFF;
+            box-shadow: 12px 10px 0px 0px #3A457D;
+            width: 100%;
+            margin-bottom: 40px;
+
+            .box-header {
+                color: #3A457D;
+                font-family: Poppins;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 4.68px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-radius: 25px 25px 0px 0px;
+                border-bottom: 3px solid #3A457D;
+                background: #FF864D;
+                padding: 15px;
+            }
+
+            .second {
+                background-color: #C2C38A;
+            }
+
+            .third {
+                background-color: #E7C39F;
+            }
+
+            .box-main {
+                border-radius: 24px;
+                background: #FFF;
+                color: #3A457D;
+                font-family: Poppins;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 50px;
+                text-align: justify;
+                padding: 30px 50px;
+
+                .time-work {
+                    display: flex;
+                    justify-content: center;
+                    color: #4E745F;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-work-container {
+        flex-direction: column !important;
+
+        .left-side {
+            width: 97% !important;
+        }
+
+        .right-side {
+            width: 97% !important;
+        }
+
+        .box-main {
+            font-size: 20px !important;
+            line-height: 30px !important;
+        }
+
+        .time-work {
+            font-size: 16px !important;
+        }
+
+        .box-header {
+            font-size: 22px !important;
+            letter-spacing: 2px !important;
+        }
+    }
+}
