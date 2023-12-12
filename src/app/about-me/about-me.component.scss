@@ -98,7 +98,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    border-radius: 25px 25px 0px 0px;
+                    border-radius: 20px 20px 0px 0px;
                     border-bottom: 3px solid #3A457D;
                     background: #FF864D;
                     padding: 15px;
@@ -125,6 +125,9 @@
                     .main-info {
                         display: flex;
                         flex-direction: row;
+                        cursor: pointer;
+                        text-decoration: none;
+                        color: #3A457D;
 
                         p {
                             margin: 0;
@@ -195,7 +198,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    border-radius: 25px 25px 0px 0px;
+                    border-radius: 20px 20px 0px 0px;
                     border-bottom: 3px solid #3A457D;
                     background: #A3C9CA;
                     padding: 20px;
