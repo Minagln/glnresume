@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  detailMode: 'work' | 'edu' | 'me' | undefined = undefined;
+  detailMode: 'work' | 'edu' | 'me' | 'work-sample' | undefined = undefined;
 
-  changeStatus(status: 'work' | 'edu' | 'me' | undefined) {
+  changeStatus(status: 'work' | 'edu' | 'me' | 'work-sample' | undefined) {
     this.detailMode = this.detailMode === status ? undefined : status;
   }
 }

@@ -2,17 +2,23 @@
   <div class="main-des">
     <div class="left-container">
       <div class="describe-me">
-        <h1 class="heading-title">HELLO! I’m Mina Golshan- UI / UX Designer</h1>
+        <h1 class="heading-title">HELLO!</h1>
+        <h1 class="heading-title">I'm Mina Golshan- </h1>
+        <h1 class="heading-title" style="margin-bottom: 25px;"><span>Product Designer</span></h1>
         <p class="describe-style">
-          With a background in web programming, I have recently embarked on the path of user experience design I am
-          trying to create a better way for users to interact with digital products and Help people to deal with
-          confusion about new digital world…
+          From paintbrush to pixels, my design journey led me to digital product design.
+        </p>
+        <p class="describe-style">
+          Now, I craft experiences that not only look good, but solve user problems too.
         </p>
       </div>
       <div class="my-experience">
         <a href="#me" class="show-more-detail about-me" (click)="changeStatus('me')">About Me</a>
         <a href="#work" class="show-more-detail my-work" (click)="changeStatus('work')">My Work</a>
         <a href="#edu" class="show-more-detail my-edu" (click)="changeStatus('edu')">My Education</a>
+        <!-- <a href="#work-sample" class="show-more-detail work-sample" (click)="changeStatus('work-sample')">
+          Work Sample
+        </a> -->
       </div>
     </div>
     <div class="right-container">
@@ -23,3 +29,4 @@
 <app-works *ngIf="detailMode === 'work'" id="work"></app-works>
 <app-educations *ngIf="detailMode === 'edu'" id="edu"></app-educations>
 <app-about-me *ngIf="detailMode === 'me'" id="me"></app-about-me>
+<app-work-sample *ngIf="detailMode === 'work-sample'" id="work-sample"></app-work-sample>

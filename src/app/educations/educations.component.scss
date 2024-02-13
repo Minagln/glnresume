@@ -9,7 +9,6 @@
         flex-direction: column;
         width: 46%;
         align-items: flex-start;
-        background-image: url('/assets/img/file.svg');
         background-repeat: no-repeat;
         background-position: right center;
 
@@ -28,7 +27,6 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
-            margin-left: -20px;
         }
 
         .box-container {
@@ -46,7 +44,6 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                letter-spacing: 4.68px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -65,7 +62,6 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 20px;
-                text-align: justify;
                 padding: 30px 50px;
                 display: flex;
                 flex-direction: column;
@@ -97,7 +93,6 @@
         flex-direction: column;
         width: 54%;
         align-items: flex-start;
-        background-image: url('/assets/img/mail.svg');
         background-repeat: no-repeat;
         background-position: right top;
 
@@ -116,7 +111,6 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
-            margin-left: -30px;
         }
 
         .box-content {
@@ -136,7 +130,7 @@
 
                 .box-header {
                     color: #3A457D;
-                    font-size: 19px;
+                    font-size: 24px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
@@ -180,6 +174,14 @@
                         font-size: 14px;
                     }
                 }
+            }
+
+            .image-box {
+                width: 47%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 40px;
             }
         }
     }
@@ -231,7 +233,6 @@
 
         .box-header {
             font-size: 20px !important;
-            letter-spacing: 2.5px !important;
         }
 
         .time-work {
