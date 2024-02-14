@@ -82,8 +82,8 @@
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 50px;
-                padding: 30px 50px;
+                line-height: 35px;
+                padding: 20px 50px;
 
                 .time-work {
                     display: flex;
@@ -101,29 +101,34 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .main-work-container {
-        flex-direction: column !important;
+    .main-work {
+        background-image: unset !important;
 
-        .left-side {
-            width: 97% !important;
-        }
+        .main-work-container {
+            flex-direction: column !important;
 
-        .right-side {
-            width: 97% !important;
-        }
+            .left-side {
+                width: 97% !important;
+            }
 
-        .box-main {
-            font-size: 20px !important;
-            line-height: 30px !important;
-        }
+            .right-side {
+                width: 97% !important;
+            }
 
-        .time-work {
-            font-size: 16px !important;
-        }
+            .box-main {
+                font-size: 20px !important;
+                line-height: 30px !important;
+                padding: 20px !important;
+            }
 
-        .box-header {
-            font-size: 22px !important;
-            letter-spacing: 2px !important;
+            .time-work {
+                font-size: 16px !important;
+            }
+
+            .box-header {
+                font-size: 22px !important;
+                letter-spacing: 2px !important;
+            }
         }
     }
 }

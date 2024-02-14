@@ -1,1 +1,110 @@
-<p>work-sample works!</p>
+<div class="main-work-sample">
+    <h1 class="work-sample-haeder">Work samples</h1>
+    <div class="main-work-box">
+        <div class="box-container">
+            <h1 class="box-header">UI Bootcamp Project</h1>
+            <div class="box-body">
+                <p>
+                    I created a mobile platform for coffee connoisseurs to browse, personalize, and savour their
+                    delivered coffee, simplifying the journey with an intuitive and visually appealing interface.
+                </p>
+                <div class="bottom-section-box">
+                    <p>
+                        Check out
+                        <a href="https://www.behance.net/gallery/187019005/Online-coffee-ordering-app">Behance</a>
+                        for more information on the design and case studies.
+                    </p>
+                    <img src="/assets/img/bootcamp.png" alt="bootcamp" (click)="changeImage('coco cofeeshop.png')">
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <h1 class="box-header hamsaz">Redesign HamsazHiva</h1>
+            <div class="box-body">
+                <p>
+                    Redesign of the site with the topic of selling housing meters for investmentIn this project, I
+                    redesigned some parts of the panel and improved its user experience. I also tried to maintain the
+                    integrity with the previous design so that the cost of development would not increase.
+                </p>
+                <div class="bottom-section-box">
+                    <p>
+                        Check out the
+                        <a href="https://hamsazhiva.com/#/site_managment">hamsaz</a>
+                        website for the project's ongoing updates
+                    </p>
+                    <img src="/assets/img/hamsazhyva.png" alt="hamsazhyva" (click)="changeImage('Hamsaz.png')">
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <h1 class="box-header analysis">User behavior analysis Panel</h1>
+            <div class="box-body">
+                <p>
+                    This panel is designed to analyze the behavior of Bluebank customers.With the combined efforts
+                    ofthehyvatech company's artificial intelligence group and myself, we presented this design to
+                    theemployers.
+                </p>
+                <div class="bottom-section-box">
+                    <p>
+                        This project is currently under development and there is no website to display it yet.
+                    </p>
+                    <img src="/assets/img/analysis.png" alt="analysis" (click)="changeImage('Blu Bank.png')">
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <h1 class="box-header car">Car Hire Purchase and Layaway Website</h1>
+            <div class="box-body">
+                <p>
+                    The project owner sought a system that would streamline the purchase of cars through installments.
+                    To achieve this goal, I conducted user interviews, analyzed competitor offerings, and created a
+                    sitemap and task flow to map out the user journey. With a validated task flow in hand, I then
+                    proceeded to develop wireframes and visual designs.
+                </p>
+                <div class="bottom-section-box">
+                    <p>
+                        Currently, the public pages of the designed website are undergoing final approval by the
+                        employer before implementation.
+                    </p>
+                    <img src="/assets/img/car.png" alt="car" (click)="changeImage('Vafa.png')">
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <h1 class="box-header yazd">Platform for Managing Industrial Units in Yazd</h1>
+            <div class="box-body">
+                <p>
+                    This panel was designed as a website commissioned by the Yazd Governorate to facilitate the
+                    management of production units in Yazd by gubernatorial experts.
+                </p>
+                <div class="bottom-section-box">
+                    <p>
+                        Given its governmental nature, the website is not publicly accessible.
+                    </p>
+                    <img src="/assets/img/yazd.png" alt="yazd" (click)="changeImage('Ostandari.png')">
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <h1 class="box-header freelance">Freelance Design Work for Individual Client</h1>
+            <div class="box-body-image">
+                <img src="/assets/img/freelance1.png" alt="freelance1" (click)="changeImage('Jahadi.png')">
+                <img src="/assets/img/freelance2.png" alt="freelance2" (click)="changeImage('BesazBam.png')">
+                <img src="/assets/img/freelance3.png" alt="freelance3" (click)="changeImage('Plan Cafe.png')">
+                <img src="/assets/img/freelance4.png" alt="freelance4" (click)="changeImage('Chideman.png')">
+            </div>
+        </div>
+        <div class="box-container">
+            <h1 class="box-header">Product Design Bootcamp project</h1>
+            <div class="box-body-text">
+                <p>Stay tuned for the release... :)))</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-dialog" *ngIf="canShowModal">
+    <div class="modal-content">
+        <img src="/assets/img/close.svg" alt="close" class="close" (click)="changeImage()">
+        <img [src]="'/assets/hd-image/' + modalImage" class="main-image" [alt]="modalImage">
+    </div>
+</div>

@@ -173,6 +173,28 @@
                     small {
                         font-size: 14px;
                     }
+
+                    a {
+                        color: #2E96B7 !important;
+                        font-size: 20px;
+                    }
+
+                    a:link,
+                    a:visited {
+                        color: #2E96B7 !important;
+                    }
+
+                    a:link:active,
+                    a:visited:active {
+                        color: #2E96B7 !important;
+                    }
+
+                    a.is-active,
+                    a:active,
+                    a:focus,
+                    a:hover {
+                        color: #2E96B7 !important;
+                    }
                 }
             }
 
@@ -238,5 +260,9 @@
         .time-work {
             font-size: 17px !important;
         }
+    }
+
+    .image-box{
+        display: none !important;
     }
 }

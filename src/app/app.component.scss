@@ -34,7 +34,7 @@
                     margin-bottom: 0;
                     line-height: 75px;
 
-                    span{
+                    span {
                         font-weight: bold;
                     }
                 }
@@ -107,6 +107,10 @@
                 width: 100%;
                 height: inherit;
             }
+
+            .image-mood-responsive {
+                display: none;
+            }
         }
     }
 }
@@ -143,7 +147,7 @@
             }
 
             .describe-style {
-                font-size: 20px !important;
+                font-size: 18px !important;
             }
 
             .show-more-detail {
@@ -152,13 +156,23 @@
             }
 
             .my-experience {
-                margin-top: 0 !important;
+                margin-top: 20px !important;
             }
         }
 
         .right-container {
             width: 100% !important;
             margin-bottom: 15px !important;
+
+            .image-mood {
+                display: none;
+            }
+
+            .image-mood-responsive {
+                display: block !important;
+                width: 100%;
+                height: inherit;
+            }
         }
     }
 }
