@@ -6,6 +6,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { EducationsComponent } from './educations/educations.component';
 import { WorksComponent } from './works/works.component';
 import { WorkSampleComponent } from './work-sample/work-sample.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -13,12 +15,14 @@ import { WorkSampleComponent } from './work-sample/work-sample.component';
     AboutMeComponent,
     EducationsComponent,
     WorksComponent,
-    WorkSampleComponent
+    WorkSampleComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

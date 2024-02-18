@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-work-sample',
@@ -9,6 +10,12 @@ export class WorkSampleComponent {
   canShowModal: boolean = false;
   modalImage: string | undefined;
 
+  constructor(private Router: Router) {}
+
+  goBack() {
+    this.Router.navigateByUrl('/');
+  }
+  
   changeImage(image?: string) {
     if (image) {
       this.canShowModal = true;

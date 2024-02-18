@@ -8,6 +8,19 @@ html {
     scroll-behavior: smooth;
 }
 
-small{
+small {
     font-size: 16px;
+}
+
+.back {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    color: #3A457D;
+    width: fit-content;
+    padding: 3% 3% 0;
+    font-weight: bold;
+    font-size: 20px;
 }
