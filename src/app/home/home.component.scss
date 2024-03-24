@@ -23,6 +23,7 @@
           .describe-me {
               display: flex;
               flex-direction: column;
+              align-items: flex-start;
 
               .heading-title {
                   color: #3A457D;
